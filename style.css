@@ -1,0 +1,563 @@
+* {
+    padding: 0;
+    outline: none;
+    border: none;
+  }
+  
+  html {
+    font-size: 100%;
+    overflow-x: hidden;
+    overflow-x: hidden;
+  }
+ 
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DADCE0;
+    color: #1C4980;
+    align-items: center;
+    max-width: 1500px;
+}
+
+
+.frame1{
+    width: 125px;
+    height: 992px;
+    top: 2px;
+    padding: 16px 18px 18px 16px;
+    gap: 10px;
+    display: inline-grid;
+    text-align: center;
+    background-color: #fff;
+    position: fixed;
+}
+
+.frame1-1{
+    width: 90px;
+    height: 225px;
+    gap: 2px;
+    justify-content: center;
+    text-align: center;
+}
+
+.column{
+    width: 90px;
+    height: 70px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 8px;
+    gap: 6px;
+}
+
+.column-ass{
+    width: 90px;
+    height: 70px;
+    padding: 10px 8px 10px 8px;
+    border-radius: 8px;
+    margin-left: 15px;
+    gap: 6px;
+    color:  #0073E6;
+    background-color:  #E5F1FC;
+    border: 1px solid #0073E6
+}
+
+.column img{
+    height: 20px;
+    width: 20px;
+}
+
+.column-status{
+    width: 90px;
+    height: 80px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 8px;
+    gap: 6px;
+
+}
+
+.hr1{
+    width: 90px;
+    border: 1px;
+    border: 1px solid #BACBD5;
+    margin-left: 18px;
+
+}
+
+.hr-dotted{
+    border-top: 1px dashed gray;
+}
+
+.admin{
+    width: 47px;
+    font-size: 12px;
+    padding: 6px 24px 6px 24px;
+    border-radius: 22px;
+    border: 1px;
+    gap: 6px;
+    color: #D63500;
+    background-color: #FBEBEA;
+    border: 1px solid #D63500;
+
+}
+
+
+.main{
+    width: 1347px;
+    height: 757px;
+    top: 3px;
+    left: 180px;
+    overflow-y: auto;
+    position: absolute;
+    background-color: #fff;
+}
+
+.header{
+    width: 1264px;
+    height: 60px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 12px 12px 0px 0px;
+    gap: 24px;
+    border-bottom: 1px solid #DDE5EA;
+    display: flex;
+    background: #fff;
+
+}
+
+.header-tab{
+    gap: 20px;
+    width: 120px;
+    height: 28px;
+    text-align: left;
+    display: contents;
+
+}
+
+.header-ass{
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 12px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.header-myass{
+    color: #0073E6;
+    font-size: 15px;
+    border-bottom: 3px solid #0073E6;
+    font-weight: 600;
+    padding-top: 12px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.vl {
+    border-left:  2px solid #DADCE0;
+    height: 46px;
+    margin-top: 5px;
+  }
+
+.frame2{
+    width: 1264px;
+    height: 650px;
+    padding: 20px;
+    border-radius: 0px, 0px, 12px, 12px;
+    gap: 24px;
+    background: #fff;
+}
+
+.frame2-1{
+    width: 1224px;
+    height: 624px;
+    gap: 40px;
+    display: inline-grid;
+    background: #fff;
+}
+
+.overview{
+    width: 1224px;
+    height: 155px;
+    display: inline-grid;
+    background: #fff;
+}
+
+.overview p{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.overview-sec1{
+    width: 1224px;
+    height: 130px;
+    border-radius: 12px;
+    border: 1px;
+    display: flex;
+    border: 1px solid #DADCE0;
+}
+
+.card1{
+    width: 162px;
+    height:114px;
+    padding: 1px 20px 16px 20px;
+    gap: 16px;
+}
+
+.card1-content{
+    width: 77px;
+    height:40px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.vl-1{
+    border: 1px solid #DADCE0;
+}
+
+.card2{
+    width: 339px;
+    height:114px;
+    padding: 1px 20px 16px 20px;
+    gap: 16px;
+}
+
+.card2-content{
+    width: 350px;
+    height: 46px;
+    gap: 15px;
+    display: flex;
+}
+
+table .td1{
+    font-weight: bold; font-size: 20px;
+}
+
+table .td2{
+    color: #05C165;font-size: 15px;
+}
+
+.td3{
+    font-size: 18px;
+}
+
+.card3{
+    width: 410px;
+    height:114px;
+    padding: 1px 20px 16px 20px;
+    gap: 16px;
+}
+
+.card3-content{
+    width:410px;
+    height: 46px;
+    gap: 15px;
+    display: flex;
+}
+
+.myAssessment{
+    width: 1224px;
+    height: 390px;
+    gap: 16px;
+    display: inline-grid;
+    background: #fff;
+}
+
+.frame3{
+    width: 1224px;
+    height: 40px;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.frame4{
+    width: 1224px;
+    height: 390px;
+    gap: 30px;
+    display: flex;
+}
+
+.frame-form{
+    width: 1224px;
+    height: 210px;
+    gap: 30px;
+    display: flex;
+}
+
+.f-card1{
+    width: 388px;
+    height: 209px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px;
+    gap: 12px;
+    border: 1px solid #DADCE0;
+    background: #F6F8FA;
+    text-align: center;
+}
+
+.newAss{
+    height: 102px;
+    gap: 10px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+
+.newAss p{
+    line-height: 1px;
+    font-size: 10px;
+    text-align: center;
+}
+
+
+.modal-container {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 450px;
+    width: 100%;
+    text-align: left;
+    background: #feffff;
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+    float: right;
+    color: #323232;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Add some style to the form elements */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+input, select {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #DADCE0;
+    gap: 10px;
+
+}
+
+button{
+    background: #0073E6;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #DADCE0;
+    gap: 10px;
+}
+
+
+.f-card2{
+    width: 388px;
+    height: 209px;
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px;
+    gap: 12px;
+    border: 1px solid #DADCE0;
+}
+
+.math-card{
+    height: 129px;
+}
+
+.right{
+    cursor: pointer;
+    margin-bottom: 10px;
+    float: right;
+}
+
+
+.math-card-content{
+    width: 356px;
+    height: 36px;
+    justify-content: space-between;
+    padding: 40px 0px 20px;
+    display: inline-flex;
+
+}
+
+.share{
+    width: 77px;
+    height: 22px;
+    padding: 2px 8px 2px 6px;
+    border-radius: 50px;
+    gap: 4px;
+    border: 1px solid rgb(28, 73, 128);
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.LP{
+    width: 30px;
+    height: 30px;
+    padding: 5px 6px 5px 6px;
+    border-radius: 32.73px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    rotate: -0 deg;
+    background:  #6548EE;
+    color: #fff;
+    text-align: center;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    border: none;
+}
+
+
+/* @media only screen and (max-width:700px){
+
+    .main{
+        width: 345px;
+        height: 1210px;
+        gap: 10px;
+    }
+
+    .header{
+        width:345px;
+        height: 40px;
+        justify-content: space-between;
+    }
+    .header-tab{
+        gap: 10px;
+        width: 120px;
+        height: 30px;
+        text-align: right;
+        display: flex;
+    
+    }
+
+
+    .frame1{
+        display: none;;
+        width: 315px;
+        height: 1074px;
+        padding: 40px 20px 10px 20px;
+        border: 0px 4px 0px 0px;
+        gap: 10px;
+        background: rgba(242, 248, 254, 1);
+    }
+
+    .frame1-1{
+        display: block;
+    }
+
+    /* .modal-content{
+        width: 50%;
+        position: relative;
+        max-width: 357px;;
+    } */
+
+/* 
+    .overview-sec1{
+
+        width: 307px;
+        height: 125px;
+        display: block;
+        background: #fff;
+    }
+    
+    .overview-sec1 p{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    
+    }
+    .card1{
+        width: 100px;
+        height:114px;
+        padding: 1px 5px 1px 8px;
+        gap: 16px;
+    }
+
+    .card2{
+        width: 345px;
+        height:90px;
+        padding: 1px 14px 16px 14px;
+        gap: 10px;
+    }
+    
+
+    .column{
+        display: flex;
+    }
+    .column-ass{
+        width: 275px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px;
+    display: flex;
+    color:  #0073E6;
+    background-color:  #E5F1FC;
+    border: 1px solid #0073E6
+    }
+    .column-ass img{
+        width: 15px; height: 15px;
+    }
+
+    .close-btn{
+        color: #D63500;
+        background-color: rgb(225, 196, 196);
+        padding: 2px 10px 2px;
+        border-radius: 18px;
+    }
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Figma</title>
+</head>
+<body>
+    <div class="frame1">
+        <div class="frame1-1">
+            <div class="column">
+                <img src="./images/dashboard.png">Dashboard
+            </div>
+            <div class="column-ass"><img src="./images/note_alt.png">Assessment</div>
+            <div class="column"><img src="./images/quiz.png"> <br>My Library</div>
+            <div class="hr1"></div>
+            <div class="column"><div class="admin">Admin</div>
+            <div style="padding-top: 20px;" ><img src="./images/admin_meds.png"> <br>Round Status</div></div>
+            <div class="column-status"></div>
+            <div class="column-status"></div>
+        </div>
+    </div>
+    <div style="padding: 2px; display: flex;"></div>
+    <div class="main">
+         <div class="header">
+            <!-- <div class="header">
+                <p>Assessment</p>
+                <div class="header-tab">
+                    <img src="./images/search.png">
+                    <img src="./images/filter.png">
+                    <a onclick="openFilter()"> <img src="./images/bar_chart.png"></a>
+                </div>
+            </div> -->
+            <div class="header-tab">
+                <div class="header-ass">Assessment</div> <div class="vl"></div>
+                <div class="header-myass" >My Assessments</div>
+            </div>
+        </div>
+
+        <div class="frame2">
+            <div class="frame2-1">
+                <div class="overview" id="filter">
+                    <p style="font-size: 18px;">Assessments Overview</p>
+                    <div class="overview-sec1">
+
+                        <div class="card1"><p>Total Assessment</p>
+                            <div class="card1-content"><img src="./images/view_agenda.png"><p style="font-size: 20px;">34</p></div>
+                        </div><div class="vl-1"></div>
+
+                        <div class="card2"><p>Candidates</p>
+                            <div class="card2-content"><img src="./images/user.png">
+                                <table>
+                                    <tr><td class="td1">11,149</td>
+                                        <td class="td2">+89</td>
+                                    </tr>
+                                        <tr><td colspan="2"style="font-size: 14px;">Total Candidates</td></tr>
+                                </table>
+                                <div class="vl"></div>
+                                <table>
+                                    <tr><td class="td1">1,14</td>
+                                        <td class="td2">+89</td>
+                                    </tr>
+                                        <tr><td colspan="2"style="font-size: 14px;">Who Attempted</td></tr>
+                                </table>
+                            </div>
+                        </div><div class="vl-1"></div>
+
+                        <div class="card3"><p>Candidates Sources</p>
+                            <div class="card3-content"><img src="./images/icon9.png">
+                                <table>
+                                    <tr><td class="td1">11,000</td>
+                                        <td class="td2">+89</td>
+                                    </tr>
+                                        <tr><td colspan="2" style="font-size: 14px;">E-mail</td></tr>
+                                </table>
+                                <div class="vl"></div>
+                                <table>
+                                    <tr><td class="td1">1,45</td>
+                                        <td class="td2">+89</td>
+                                    </tr>
+                                        <tr><td colspan="2"style="font-size: 14px;">Social Share</td></tr>
+                                </table>
+                                <div class="vl"></div>
+                                <table>
+                                    <tr><td class="td1">1,45</td>
+                                        <td class="td2">+89</td>
+                                    </tr>
+                                        <tr><td colspan="2"style="font-size: 14px;">Unique Link</td></tr>
+                                </table>
+                            </div>
+                        </div><div class="vl-1"></div>
+
+                        <div class="card1"><p>Total Purpose</p>
+                            <div class="card1-content"><img src="./images/icon10.png"><p style="font-size: 20px;">11</p></div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="myAssessment">
+                    <div class="frame3">My Assessment</div>
+
+                    <div class="frame4">
+                        <div class="frame-form">
+                            <div class="f-card1">
+                                <div class="newAss"><a id="newAsses"><a onclick="openModal()"> <img src="./images/new.png"></a> <br>
+                                    <div id="modal" class="modal-container">
+                                        <!-- Modal Content -->
+                                        <div class="modal-content">
+                                            <div>
+                                                <span class="close-btn" onclick="closeModal()">&times;</span>
+                                                <h2>Create New Assessment</h2>
+                                                <hr>
+                                            </div>
+                                            <form>
+                                                <label for="name" >Name of Assessment</label>
+                                                <input type="text" id="name" name="name" placeholder="Type Here" required>
+
+                                                <label for="testPurpose">Purpose of the test is</label>
+                                                <select name="testPurpose" id="testPurpose">
+                                                    <option >Select . . .</option>
+                                                    <option value="Education">Education</option>
+                                                    <option value="practice">Practice</option>
+                                                    <option value="preparation">Preparing for Interview</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                                <label for="description">Description</label>
+                                                <select name="description" id="description">
+                                                    <option>Select . . .</option>
+                                                    <option value="description">Education</option>
+                                                    <option value="practice">Practice</option>
+                                                    <option value="preparation">Preparing for Interview</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                                <label for="skills">Select your skills:</label>
+                                                <div id="selectedSkillsContainer">
+                                                    <!-- Selected skills will be displayed here dynamically -->
+                                                </div>                                                <select id="skills" name="skills" multiple>
+                                                    <option value="frontend">Frontend Development</option>
+                                                    <option value="backend">Backend Development</option>
+                                                    <option value="fullstack">Full Stack Development</option>
+                                                    <option value="design">UI/UX Design</option>
+                                                    <option value="data">Data Science</option>
+                                                    <option value="testing">Software Testing</option>
+                                                    <option value="other">Other</option>
+                                                </select>
+                                                <label for="duration">Enter duration (HH:MM:SS) </label>
+                                                <input type="text" id="duration" name="duration" maxlength="8" placeholder="hh:mm:ss">
+                                                <button type="submit">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <h3>New Assessment</h3>
+                                    <p>From here you can add questions of multiple types like </p>
+                                        <p>MCQs, subjective (text or paragraph)!</p>
+                                </div>
+                            </div>
+                        <div>
+                            <div class="f-card2">
+                                <div class="math-card">
+                                    <img src="./images/math.png">
+                                    <img src="./images/3-dots.png" class="right"><br>
+                                    <label style="font-size: 18px; padding-top: 20px;">Math Assessment</label><br><label class="td3">Job <span class="vl"></span><img style="padding-left: 10px;" src="./images/calendar_today.png">
+                                    <input style="text-decoration: none; outline: none; border: none; margin: 0;" type='date' ></label>
+                                    <hr class="hr-dotted">
+                                </div>
+                                <div class="math-card-content">
+                                    <label>00 <br> Duration</label>
+                                    <label>00 <br> Question</label>
+                                    <label class="share"><img src="./images/Vector.png">Share</label>
+                                    <label class="LP">LP</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="f-card2">
+                                <div class="math-card">
+                                    <img src="./images/math.png">
+                                    <img src="./images/3-dots.png" class="right"><br>
+                                    <label style="font-size: 18px; padding-top: 20px;">Math Assessment</label><br><label class="td3">Job <span class="vl"></span><img style="padding-left: 10px;" src="./images/calendar_today.png">
+                                    <input style="text-decoration: none; outline: none; border: none; margin: 0;" type='date' ></label>
+                                    <hr class="hr-dotted">
+                                </div>
+                                <div class="math-card-content">
+                                    <label>00 <br> Duration</label>
+                                    <label>00 <br> Question</label>
+                                    <label class="share"><img src="./images/Vector.png">Share</label>
+                                    <label class="LP">LP</label>
+                                </div>
+                            
+
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="./scrips.js"></script>
+
+</body>
+</html>
